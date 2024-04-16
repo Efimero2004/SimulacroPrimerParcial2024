@@ -4,8 +4,6 @@ include "Venta.php";
 class Empresa
 {
 
-    //Se registra la siguiente información: denominación, dirección, la colección de clientes, colección de
-    //motos y la colección de ventas realizadas.
     private $denominacion;
     private $direccion;
     private $arrayClientes;
@@ -87,7 +85,6 @@ class Empresa
     {
         return ("\n**EMPRESA**\n" . "Denominacion:" . $this->getDenominacion() . " Direccion:" . $this->getDireccion() . " clientes:" . $this->mostrarArrayClientes() . " motos:" . $this->mostrarArrayMotos() . " ventas:" . $this->mostrarArrayVentas());
     }
-    //error getCodigo()
     public function retornarMoto($codigoMoto)
     {
         $motoEncontrada = null;
@@ -109,7 +106,6 @@ class Empresa
             return $motoEncontrada;
         }
     }
-    //COMPLETAR
     public function registrarVenta($arrayCodigosMoto, $objCliente)
     {
         $indiceFinal = count($arrayCodigosMoto);

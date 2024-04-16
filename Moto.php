@@ -1,9 +1,6 @@
 <?php
 class Moto
 {
-    /*código, costo, año fabricación, descripción, porcentaje incremento anual,
- activa (atributo que va a contener un valor true, si la moto está disponible para la
-venta y false en caso contrario).*/
     private $codigo;
     private $costo;
     private $anioFabricacion;

@@ -1,8 +1,6 @@
 <?php
 class Venta
 {
-    //Se registra la siguiente información: número, fecha, referencia al cliente,
-    //referencia a una colección de motos y el precio final.
     private $numero;
     private $fecha;
     private $objCliente;
@@ -64,11 +62,6 @@ class Venta
         }
     }
 
-    /*Implementar el método incorporarMoto($objMoto) que recibe por parámetro un objeto moto y lo
-incorpora a la colección de motos de la venta, siempre y cuando sea posible la venta. El método cada
-vez que incorpora una moto a la venta, debe actualizar la variable instancia precio final de la venta.
-Utilizar el método que calcula el precio de venta de la moto donde crea necesario.
-    */
     public function incorporarMoto($objMoto)
     {
         if ($objMoto->getActiva()) {
