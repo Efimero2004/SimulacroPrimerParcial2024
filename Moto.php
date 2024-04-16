@@ -23,30 +23,53 @@ class Moto
     {
         return $this->codigo;
     }
+    public function setCodigo($codigo){
+        $this->codigo =$codigo;
+    }
+
 
     public function getCosto()
     {
         return $this->costo;
+    }
+    public function setCosto($costo){
+        $this->costo =$costo;
     }
 
     public function getAnioFabricacion()
     {
         return $this->anioFabricacion;
     }
+    public function setAnioFabricacion($anioFabricacion){
+        $this->anioFabricacion =$anioFabricacion;
+    }
+
 
     public function getDescripcion()
     {
         return $this->descripcion;
     }
+    public function setDescripcion($descripcion){
+        $this->descripcion =$descripcion;
+    }
+
 
     public function getPorcentajeIncrementoAnual()
     {
         return $this->porcentajeIncrementoAnual;
     }
+    public function setPorcentajeIncrementoAnual($porcIncAnual){
+        $this->porcentajeIncrementoAnual =$porcIncAnual;
+    }
+
     public function getActiva()
     {
         return $this->activa;
     }
+    public function setActiva($activa){
+        $this->activa =$activa;
+    }
+
 
     public function __toString()
     {

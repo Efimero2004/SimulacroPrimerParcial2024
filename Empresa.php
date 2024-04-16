@@ -128,7 +128,6 @@ class Empresa
     public function retornarVentasXCliente($tipoDoc, $numDoc)
     {
         $arrayVentasPorCliente = [];
-        echo "Ventas por cliente:";
         $arrayV = $this->getArrayVentas();
         foreach ($arrayV as $Venta) {
             $objCliente = $Venta->getObjCliente();

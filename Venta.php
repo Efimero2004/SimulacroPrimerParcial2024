@@ -75,6 +75,6 @@ class Venta
 
     public function __toString()
     {
-        return ("VENTA: \n" . " numero:" . $this->getNumero() . " fecha:" . $this->fecha . " Cliente:" . $this->getObjCliente() . "\nArrayMotos:" . $this->mostrarArrayMotos() . " Precio Fnnal:" . $this->getPrecioFinal());
+        return ("\nVENTA: \n" . " numero:" . $this->getNumero() . " fecha:" . $this->fecha . " Cliente:" . $this->getObjCliente() . "\nArrayMotos:" . $this->mostrarArrayMotos() . " Precio Fnnal:" . $this->getPrecioFinal());
     }
 }
