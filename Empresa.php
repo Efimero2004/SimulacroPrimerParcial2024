@@ -83,12 +83,11 @@ class Empresa
     }
     public function __toString()
     {
-        return ("\n**EMPRESA**\n" . "Denominacion:" . $this->getDenominacion() . " Direccion:" . $this->getDireccion() . " clientes:" . $this->mostrarArrayClientes() . " motos:" . $this->mostrarArrayMotos() . " ventas:" . $this->mostrarArrayVentas());
+        return ("\n**EMPRESA**\n" . "Denominacion:" . $this->getDenominacion() . " Direccion:" . $this->getDireccion() . " \nclientes:" . $this->mostrarArrayClientes() . " \nmotos:" . $this->mostrarArrayMotos() . " \nventas:" . $this->mostrarArrayVentas());
     }
     public function retornarMoto($codigoMoto)
     {
         $motoEncontrada = null;
-        $bandera = true;
         $indice = 0;
         $arrayMotos = $this->getArrayMotos();
         while ($indice < count($arrayMotos)) {
