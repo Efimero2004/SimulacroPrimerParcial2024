@@ -62,28 +62,33 @@ class Empresa
     }
     public function mostrarArrayMotos()
     {
+        $cadena = "";
         foreach ($this->getArrayMotos() as $moto) {
-            echo $moto;
+            $cadena .= $moto;
         }
+        return $cadena;
     }
 
     public function mostrarArrayClientes()
     {
-
+        $cadena = "";
         foreach ($this->getArrayClientes() as $cliente) {
-            echo $cliente;
+            $cadena .= $cliente;
         }
+        return $cadena;
     }
 
     public function mostrarArrayVentas()
     {
+        $cadena = "";
         foreach ($this->getArrayVentas() as $venta) {
-            echo $venta;
+            $cadena .= $venta;
         }
+        return $cadena;
     }
     public function __toString()
     {
-        return ("\n**EMPRESA**\n" . "Denominacion:" . $this->getDenominacion() . " Direccion:" . $this->getDireccion() . " \nclientes:" . $this->mostrarArrayClientes() . " \nmotos:" . $this->mostrarArrayMotos() . " \nventas:" . $this->mostrarArrayVentas());
+        return "\n**EMPRESA**\n" . "Denominacion:" . $this->getDenominacion() . " Direccion:" . $this->getDireccion() . " \nclientes:" . $this->mostrarArrayClientes() . " \nmotos:" . $this->mostrarArrayMotos() . " \nventas:" . $this->mostrarArrayVentas();
     }
     public function retornarMoto($codigoMoto)
     {
